@@ -1,68 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css" />
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Accessible and SEO-Friendly Web Page</title>
-  <meta name="description" content="A basic web page demonstrating HTML5 semantic structure, accessibility best practices, and SEO fundamentals." />
-  <meta name="keywords" content="HTML5, accessibility, SEO, semantic, web design" />
-  <meta name="author" content="Your Name" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout Assignment</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header role="banner">
-    <h1>Welcome to Our Accessible & SEO-Friendly Website</h1>
-    <nav role="navigation" aria-label="Primary navigation">
-      <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <h1>My Responsive Web Page</h1>
   </header>
 
-  <main role="main">
-    <section id="introduction" aria-labelledby="intro-heading">
-      <h2 id="intro-heading">Introduction</h2>
-      <p>
-        This page demonstrates the use of HTML5 semantic elements, proper accessibility attributes, and SEO-friendly markup to create a website that is both user-friendly and easy for search engines to understand.
-      </p>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-container">
+    <section class="content">
+      <h2>Welcome</h2>
+      <p>This section contains the main content. Resize the screen to see how it adapts!</p>
     </section>
 
-    <section id="features" aria-labelledby="features-heading">
-      <h2 id="features-heading">Key Features</h2>
-      <article>
-        <h3>Semantic HTML5 Structure</h3>
-        <p>
-          Using elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> enhances both accessibility and SEO.
-        </p>
-      </article>
-      <article>
-        <h3>Accessibility Enhancements</h3>
-        <p>
-          Proper landmarks and ARIA attributes help screen readers navigate the page more effectively.
-        </p>
-      </article>
-      <article>
-        <h3>SEO Best Practices</h3>
-        <p>
-          Logical heading hierarchy and descriptive metadata improve the page's discoverability by search engines.
-        </p>
-      </article>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact Us</h2>
-      <address>
-        You can reach us at: <a href="mailto:info@example.com">info@example.com</a><br />
-        Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
-      </address>
-    </section>
+    <aside class="sidebar">
+      <h3>Sidebar</h3>
+      <p>Useful links and information live here.</p>
+    </aside>
   </main>
 
-  <footer role="contentinfo">
-    <p>&copy; 2025 Accessible & SEO-Friendly Web Page. All rights reserved.</p>
+  <section class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
   </footer>
 
 </body>
